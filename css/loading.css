@@ -1,0 +1,220 @@
+/* ===== LOADING SCREEN ===== */
+.loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--background-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.8s ease, visibility 0.8s ease;
+}
+
+.loading-screen.fade-out {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loading-container {
+    text-align: center;
+    max-width: 600px;
+    padding: 2rem;
+}
+
+/* Moon Logo Animation */
+.moon-logo {
+    margin-bottom: 3rem;
+    position: relative;
+    display: inline-block;
+}
+
+.moon-shape {
+    width: 180px;
+    height: 180px;
+    background: linear-gradient(135deg, var(--purple-dark), var(--primary-purple), var(--accent-pink));
+    border-radius: 50%;
+    position: relative;
+    margin: 0 auto;
+    box-shadow: 
+        0 0 80px var(--purple-glow),
+        inset 0 0 40px rgba(255, 255, 255, 0.1);
+    animation: moon-float 4s ease-in-out infinite;
+}
+
+.moon-glow {
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    right: -30px;
+    bottom: -30px;
+    border-radius: 50%;
+    background: radial-gradient(
+        circle at center,
+        var(--purple-glow) 0%,
+        transparent 70%
+    );
+    animation: glow-pulse 3s ease-in-out infinite;
+    z-index: -1;
+}
+
+.moon-glow-2 {
+    animation-delay: 1.5s;
+    background: radial-gradient(
+        circle at center,
+        rgba(255, 0, 255, 0.2) 0%,
+        transparent 70%
+    );
+}
+
+@keyframes moon-float {
+    0%, 100% {
+        transform: translateY(0) scale(1);
+    }
+    50% {
+        transform: translateY(-20px) scale(1.05);
+    }
+}
+
+@keyframes glow-pulse {
+    0%, 100% {
+        opacity: 0.5;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.8;
+        transform: scale(1.1);
+    }
+}
+
+/* Typewriter Effect */
+.typewriter-container {
+    margin: 2rem 0;
+    min-height: 80px;
+}
+
+.typewriter-text {
+    font-size: 3.5rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--text-primary), var(--purple-light));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: inline-block;
+    position: relative;
+    text-shadow: 0 0 20px var(--purple-glow);
+}
+
+.typewriter-text::after {
+    content: '|';
+    position: absolute;
+    right: -10px;
+    animation: blink 0.7s infinite;
+    color: var(--primary-purple);
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+/* Loading Bar */
+.loading-bar {
+    width: 300px;
+    height: 4px;
+    background: rgba(138, 43, 226, 0.1);
+    border-radius: 2px;
+    margin: 2rem auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.loading-progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, var(--primary-purple), var(--accent-pink));
+    border-radius: 2px;
+    transition: width 0.3s ease;
+}
+
+.loading-bar::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        90deg,
+        transparent 0%,
+        rgba(255, 255, 255, 0.3) 50%,
+        transparent 100%
+    );
+    animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+.loading-text {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    margin-top: 1rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    opacity: 0.7;
+}
+
+/* ===== FADE IN ANIMATION ===== */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+/* ===== RESPONSIVE LOADING SCREEN ===== */
+@media (max-width: 768px) {
+    .moon-shape {
+        width: 140px;
+        height: 140px;
+    }
+    
+    .typewriter-text {
+        font-size: 2.5rem;
+    }
+    
+    .loading-bar {
+        width: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .moon-shape {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .typewriter-text {
+        font-size: 2rem;
+    }
+    
+    .loading-bar {
+        width: 200px;
+    }
+}

@@ -1,0 +1,419 @@
+/* ===== ABOUT PAGE STYLES ===== */
+.about-section {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.about-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.about-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--text-primary), var(--purple-light));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 30px var(--purple-glow);
+}
+
+.title-underline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 1rem 0;
+}
+
+.underline-line {
+    width: 100px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--primary-purple), transparent);
+}
+
+.underline-dot {
+    width: 8px;
+    height: 8px;
+    background: var(--accent-pink);
+    border-radius: 50%;
+    box-shadow: 0 0 10px var(--accent-pink);
+}
+
+.about-content {
+    background: var(--surface-blur);
+    backdrop-filter: blur(20px);
+    border-radius: var(--border-radius);
+    padding: 3rem;
+    border: 1px solid rgba(138, 43, 226, 0.1);
+    box-shadow: var(--shadow-soft);
+}
+
+.about-intro {
+    margin-bottom: 3rem;
+}
+
+.about-intro h2 {
+    font-size: 2.2rem;
+    color: var(--text-primary);
+    margin-bottom: 1.5rem;
+    text-align: center;
+    background: linear-gradient(135deg, var(--text-primary), var(--purple-light));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.intro-text {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+    text-align: justify;
+}
+
+.highlight {
+    color: var(--purple-light);
+    font-weight: 600;
+    text-shadow: 0 0 10px var(--purple-glow);
+}
+
+.moon-phases {
+    margin-top: 2rem;
+}
+
+.phase {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: var(--border-radius);
+    border-left: 4px solid var(--primary-purple);
+}
+
+.phase-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--primary-purple), var(--accent-pink));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.phase-content h3 {
+    color: var(--text-primary);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.phase-content p {
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+
+.about-mission {
+    margin: 4rem 0;
+    padding: 2rem 0;
+    border-top: 1px solid rgba(138, 43, 226, 0.1);
+    border-bottom: 1px solid rgba(138, 43, 226, 0.1);
+}
+
+.about-mission h2 {
+    font-size: 2.2rem;
+    color: var(--text-primary);
+    margin-bottom: 1.5rem;
+    text-align: center;
+    background: linear-gradient(135deg, var(--text-primary), var(--purple-light));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.mission-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.mission-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+
+.about-rules {
+    margin: 4rem 0;
+}
+
+.about-rules h2 {
+    font-size: 2.2rem;
+    color: var(--text-primary);
+    margin-bottom: 2rem;
+    text-align: center;
+    background: linear-gradient(135deg, var(--text-primary), var(--purple-light));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.value-item {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    border: 1px solid rgba(138, 43, 226, 0.1);
+    transition: var(--transition-smooth);
+}
+
+.value-item:hover {
+    transform: translateY(-5px);
+    border-color: rgba(138, 43, 226, 0.3);
+    box-shadow: var(--shadow-soft);
+}
+
+.value-icon {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, var(--primary-purple), var(--accent-pink));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.value-content h3 {
+    color: var(--text-primary);
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.value-content p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.about-community {
+    margin: 4rem 0;
+}
+
+.about-community h2 {
+    font-size: 2.2rem;
+    color: var(--text-primary);
+    margin-bottom: 2rem;
+    text-align: center;
+    background: linear-gradient(135deg, var(--text-primary), var(--purple-light));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.community-features {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.feature-description {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    border-left: 4px solid var(--primary-purple);
+}
+
+.feature-description h3 {
+    color: var(--text-primary);
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.feature-description h3 i {
+    color: var(--purple-light);
+}
+
+.feature-description p {
+    color: var(--text-secondary);
+    line-height: 1.7;
+    text-align: justify;
+}
+
+.about-founder {
+    margin: 4rem 0;
+    padding: 3rem;
+    background: linear-gradient(135deg, rgba(138, 43, 226, 0.1), rgba(255, 0, 255, 0.05));
+    border-radius: var(--border-radius);
+    border: 1px solid rgba(138, 43, 226, 0.2);
+}
+
+.about-founder h2 {
+    font-size: 2.2rem;
+    color: var(--text-primary);
+    margin-bottom: 2rem;
+    text-align: center;
+    background: linear-gradient(135deg, var(--text-primary), var(--purple-light));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.founder-message {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.founder-quote {
+    position: relative;
+    padding: 2rem;
+}
+
+.quote-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 3rem;
+    color: var(--purple-glow);
+    opacity: 0.3;
+}
+
+.founder-quote p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: var(--text-secondary);
+    font-style: italic;
+    margin-bottom: 2rem;
+    padding-left: 3rem;
+    position: relative;
+}
+
+.founder-signature {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 2rem;
+    padding-right: 1rem;
+}
+
+.founder-name {
+    font-size: 1.3rem;
+    color: var(--text-primary);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.founder-role {
+    color: var(--purple-light);
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+.about-join {
+    margin-top: 4rem;
+    padding: 3rem;
+    background: linear-gradient(135deg, rgba(138, 43, 226, 0.1), transparent);
+    border-radius: var(--border-radius);
+    text-align: center;
+    border: 1px solid rgba(138, 43, 226, 0.1);
+}
+
+.join-cta h3 {
+    font-size: 2rem;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, var(--text-primary), var(--purple-light));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.join-cta p {
+    color: var(--text-secondary);
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    line-height: 1.7;
+}
+
+.join-cta .btn {
+    margin-top: 1rem;
+}
+
+/* ===== RESPONSIVE ABOUT PAGE ===== */
+@media (max-width: 768px) {
+    .about-title {
+        font-size: 2.5rem;
+    }
+    
+    .about-content {
+        padding: 2rem 1.5rem;
+    }
+    
+    .phase {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+    
+    .phase-icon {
+        margin: 0 auto;
+    }
+    
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .about-founder {
+        padding: 2rem 1rem;
+    }
+    
+    .founder-quote p {
+        padding-left: 2rem;
+        font-size: 1.1rem;
+    }
+    
+    .about-mission h2,
+    .about-values h2,
+    .about-community h2,
+    .about-founder h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-title {
+        font-size: 2rem;
+    }
+    
+    .about-content {
+        padding: 1.5rem 1rem;
+    }
+    
+    .intro-text {
+        font-size: 1.1rem;
+    }
+    
+    .phase {
+        padding: 1.5rem;
+    }
+    
+    .join-cta h3 {
+        font-size: 1.6rem;
+    }
+}
