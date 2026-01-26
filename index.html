@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lunar Community | Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/loading.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-container">
+            <div class="moon-logo">
+                <div class="moon-shape">
+                    <div class="moon-glow"></div>
+                    <div class="moon-glow moon-glow-2"></div>
+                </div>
+            </div>
+            <div class="typewriter-container">
+                <h1 class="typewriter-text" id="typewriterText"></h1>
+            </div>
+            <div class="loading-bar">
+                <div class="loading-progress" id="loadingProgress"></div>
+            </div>
+            <p class="loading-text">Loading..</p>
+        </div>
+    </div>
+
+    <!-- Animated Background Waves -->
+    <div class="wave-background">
+        <div class="wave wave-1"></div>
+        <div class="wave wave-2"></div>
+        <div class="wave wave-3"></div>
+        <div class="wave wave-4"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo" id="navLogo">
+                <div class="logo-icon">
+                    <i class="fas fa-moon"></i>
+                </div>
+                <span>LUNAR</span>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link active" data-load="home">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a>
+                <a href="about.html" class="nav-link" data-load="about">
+                    <i class="fas fa-info-circle"></i>
+                    <span>About</span>
+                </a>
+                <a href="gallery.html" class="nav-link" data-load="gallery">
+                    <i class="fas fa-images"></i>
+                    <span>Gallery</span>
+                </a>
+                <a href="contact.html" class="nav-link" data-load="contact">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contact</span>
+                </a>
+            </div>
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content" id="mainContent">
+        <section class="hero">
+            <div class="hero-container">
+                <div class="logo-display">
+                    <div class="animated-logo">
+                        <div class="logo-circle">
+                            <div class="moon-graphic">
+                                <div class="crescent"></div>
+                                <div class="crescent crescent-2"></div>
+                                <div class="star star-1"></div>
+                                <div class="star star-2"></div>
+                                <div class="star star-3"></div>
+                            </div>
+                            <div class="pulse-ring"></div>
+                            <div class="pulse-ring pulse-ring-2"></div>
+                        </div>
+                    </div>
+                    <h1 class="main-title">LUNAR COMMUNITY</h1>
+                    <p class="tagline">Tempat para pemain Roblox berkumpul sebagai satu keluarga untuk bermain dan saling mendukung dalam suasana positif.</p>
+                </div>
+
+                <div class="hero-actions">
+                    <button class="btn btn-primary btn-glow" id="joinBtn">
+                        <i class="fas fa-rocket"></i>
+                        Bergabung
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Join Modal -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-content blur-modal">
+            <div class="modal-header">
+                <h2>Join Lunar Community</h2>
+                <button class="close-modal" id="closeModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Pilih platform yang kamu inginkan untuk bergabung dengan komunitas kami:</p>
+                <div class="modal-options">
+                    <a href="https://discord.gg/BMgtEAdB2" target="_blank" class="platform-option discord-option">
+                        <i class="fab fa-discord"></i>
+                        <div class="option-details">
+                            <h3>Discord Server</h3>
+                        </div>
+                    </a>
+                    <a href="https://chat.whatsapp.com/JEvk4Ym0tVk0TKeMeTfeSC" target="_blank" class="platform-option whatsapp-option">
+                        <i class="fab fa-whatsapp"></i>
+                        <div class="option-details">
+                            <h3>WhatsApp Group</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer-minimal">
+        <div class="footer-content">
+            <p class="copyright">©2026 Lunar Website by Dylphiiee</p>
+        </div>
+    </footer>
+
+    <!-- Page Loader -->
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-spinner">
+            <div class="spinner-circle"></div>
+            <div class="spinner-circle spinner-circle-2"></div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/loading.js"></script>
+</body>
+</html>
